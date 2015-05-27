@@ -9,8 +9,8 @@ public class ZohoTestMain {
 		  int passes=0;
 		  int fails=0;
 		  List<TestCases> cases=new ArrayList<TestCases>();
-		  String path=new File("Desktop/ZohoTest/src/TestData.xls").getAbsolutePath();
-		  cases=TestDataReader.readData(path);
+		  
+		  cases=TestDataReader.readData("c:\\ZohoTestData\\TestData.xls");
          //import all un-imported leads
 		  for(TestCases casex:cases)
 		  {
